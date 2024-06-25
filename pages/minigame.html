@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Fan club of Lycoris Recoil</title>
+
+    <!-- import css -->
+    <link href="../css/reset.css" rel="stylesheet" type="text/css">
+    <link href="../css/style.css" rel="stylesheet" type="text/css">
+    <link href="../css/reversi.css" rel="stylesheet" type="text/css">
+
+    <!-- make icon -->
+    <link rel="shortcut icon" href="../images\common\icon256.ico">
+
+    <!-- js -->
+    <script type="text/javascript" src="../js/common.js"></script>
+    <script type="text/javascript" src="../js/reversi.js"></script>
+
+</head>
+
+<body>
+
+    <!-- background -->
+    <div id="bg"></div>
+    <!-- /background -->
+
+
+    <!-- navi -->
+    <div id="navArea">
+        <nav>
+            <div class="inner">
+                <ul>
+                    <li><a class="nav_btn nav__logo curr"><img src="../images/header/logo.png"></a></li>
+                    <li><a class="nav_btn can" href="#">TOP</a></li>
+                    <li><a class="nav_btn can" href="../index.html">Abstract</a></li>
+                    <li><a class="nav_btn can" href="../pages/Story.html">Story</a></li>
+                    <li><a class="nav_btn curr">Minigame</a></li>
+                    <li><a class="nav_btn can" href="../pages/Character.html">Character</a></li>
+                </ul>
+            </div>
+
+        </nav>
+
+        <div class="toggle_btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <div id="mask"></div>
+
+    </div>
+
+    <!-- /navi -->
+
+
+    <!-- header -->
+
+    <div id="header-wrap">
+
+        <div id="header2">
+
+            <div class="logo-pos2">
+                <h1>logo</h1>
+            </div>
+
+        </div>
+
+    </div>
+
+    </div>
+
+
+    <!-- /header -->
+
+
+    <!-- contents -->
+
+    <div class="content-bg">
+        <div class="content-wrap">
+            <!-- reversi -->
+
+            <section id="game">
+
+                <h2>Minigame<br><span><img src="../images/game/face_takina_a.png" alt="" style="height: 2em;">choose
+                        your character<img src="../images/game/face_chisato_b.png" alt="" style="height: 2em;"></span>
+                </h2>
+
+                <div class="space-wrap">
+
+                    <form name="selectForm" method="get">
+                        <ul class="selection-wrap">
+
+                            <li>
+                                <input type="radio" id="takina" name="chara" value="takina" style="display:none;">
+                                <div class="selection" onclick="selectCharacter('takina')">
+                                    <figure><img src="../images/game/select_takina.jpg" alt=""></figure>
+                                    <h3>Takina</h3>
+                                </div>
+                            </li>
+                            <li>
+                                <input type="radio" id="chisato" name="chara" value="chisato" style="display:none;">
+                                <div class="selection" onclick="selectCharacter('chisato')">
+                                    <figure><img src="../images/game/select_chisato.jpg" alt=""></figure>
+                                    <h3>Chisato</h3>
+                                </div>
+                            </li>
+                        </ul>
+                    </form>
+
+                </div>
+
+
+
+            </section>
+
+            <!-- /reversi-->
+
+        </div>
+    </div>
+
+
+    <!-- /contents -->
+
+    <!-- footer -->
+
+    <footer>
+
+        <!-- sns -->
+
+        <ul class="sns">
+            <li><a href="https://twitter.com/lycoris_recoil" target="_blank"><img src="../images/common/icon_x.png"
+                         alt="twitter/X"></a></li>
+            <li><a href="https://www.pixiv.net/users/83515809" target="_blank"><img
+                         src="../images/common/icon_pixiv.png" alt="pixiv"></a></li>
+        </ul>
+
+        <!-- /sns -->
+
+    </footer>
+
+    <!-- /footer -->
+
+    <!-- return top -->
+
+    <div id="page-top" style=""><a href="#header-wrap"><img src="../images/common/returan-top.png" alt="ページTOPへ戻る"></a>
+    </div>
+
+    <!-- /return top -->
+
+</body>
+
+</html>

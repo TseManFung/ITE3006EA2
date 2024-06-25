@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Fan club of Lycoris Recoil</title>
+
+    <!-- import css -->
+    <link href="../css/reset.css" rel="stylesheet" type="text/css">
+    <link href="../css/style.css" rel="stylesheet" type="text/css">
+
+
+    <!-- make icon -->
+    <link rel="shortcut icon" href="../images\common\icon256.ico">
+
+    <!-- js -->
+    <script type="text/javascript" src="../js/common.js"></script>
+    <script type="text/javascript" src="../js/vote.js"></script>
+
+</head>
+
+<body>
+
+    <!-- background -->
+    <div id="bg"></div>
+    <!-- /background -->
+
+
+    <!-- navi -->
+    <div id="navArea">
+        <nav>
+            <div class="inner">
+                <ul>
+                    <li class="smail_li"><a class="nav_btn nav__logo curr"><img src="../images/header/logo.png"></a>
+                    </li>
+                    <li class="smail_li"><a class="nav_btn can" href="#">TOP</a></li>
+                    <li class="smail_li"><a class="nav_btn can" href="../index.html">Abstract</a></li>
+                    <li class="smail_li"><a class="nav_btn can" href="../pages/Story.html">Story</a></li>
+                    <li class="smail_li"><a class="nav_btn can" href="../pages/minigame.html">Minigame</a></li>
+                    <li class="smail_li"><a class="nav_btn can" href="../pages/Character.html">Character</a></li>
+                </ul>
+            </div>
+
+        </nav>
+
+        <div class="toggle_btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <div id="mask"></div>
+
+    </div>
+
+    <!-- /navi -->
+
+
+    <!-- header -->
+
+    <div id="header-wrap">
+
+        <div id="header2">
+
+            <div class="logo-pos2">
+                <h1>logo</h1>
+            </div>
+
+        </div>
+
+    </div>
+
+    </div>
+
+
+    <!-- /header -->
+
+
+    <!-- contents -->
+
+    <div class="content-bg">
+        <div class="content-wrap">
+            <!-- vote -->
+            <form method="post" name="f">
+
+                <section id="vote">
+
+                    <h2>Vote<br><span>Choose your favorite character</span></h2>
+
+                    <div class="space-wrap">
+
+                        <ul class="selection-wrap">
+
+                            <li class="smail_li">
+                                <input type="radio" id="chisato" name="chara" value="chisato" style="display:none;"
+                                       required>
+                                <div class="selection" onclick="selectCharacter('chisato')">
+                                    <figure><img src="../images/vote/chisato.png" alt=""></figure>
+                                    <h3>Chisato</h3>
+                                </div>
+                            </li>
+                            <li class="smail_li">
+                                <input type="radio" id="fuki" name="chara" value="fuki" style="display:none;" required>
+                                <div class="selection" onclick="selectCharacter('fuki')">
+                                    <figure><img src="../images/vote/fuki.png" alt=""></figure>
+                                    <h3>Fuki</h3>
+                                </div>
+                            </li>
+                            <li class="smail_li">
+                                <input type="radio" id="kurumi" name="chara" value="kurumi" style="display:none;"
+                                       required>
+                                <div class="selection" onclick="selectCharacter('kurumi')">
+                                    <figure><img src="../images/vote/kurumi.png" alt=""></figure>
+                                    <h3>Kurumi</h3>
+                                </div>
+                            </li>
+                            <li class="smail_li">
+                                <input type="radio" id="kusunoki" name="chara" value="kusunoki" style="display:none;"
+                                       required>
+                                <div class="selection" onclick="selectCharacter('kusunoki')">
+                                    <figure><img src="../images/vote/kusunoki.png" alt=""></figure>
+                                    <h3>Kusunoki</h3>
+                                </div>
+                            </li>
+                            <li class="smail_li">
+                                <input type="radio" id="majima" name="chara" value="majima" style="display:none;"
+                                       required>
+                                <div class="selection" onclick="selectCharacter('majima')">
+                                    <figure><img src="../images/vote/majima.png" alt=""></figure>
+                                    <h3>Majima</h3>
+                                </div>
+                            </li>
+                            <li class="smail_li">
+                                <input type="radio" id="mika" name="chara" value="mika" style="display:none;" required>
+                                <div class="selection" onclick="selectCharacter('mika')">
+                                    <figure><img src="../images/vote/mika.png" alt=""></figure>
+                                    <h3>Mika</h3>
+                                </div>
+                            </li>
+                            <li class="smail_li">
+                                <input type="radio" id="mizuki" name="chara" value="mizuki" style="display:none;"
+                                       required>
+                                <div class="selection" onclick="selectCharacter('mizuki')">
+                                    <figure><img src="../images/vote/mizuki.png" alt=""></figure>
+                                    <h3>Mizuki</h3>
+                                </div>
+                            </li>
+                            <li class="smail_li">
+                                <input type="radio" id="robota" name="chara" value="robota" style="display:none;"
+                                       required>
+                                <div class="selection" onclick="selectCharacter('robota')">
+                                    <figure><img src="../images/vote/robota.png" alt=""></figure>
+                                    <h3>Robota</h3>
+                                </div>
+                            </li>
+                            <li class="smail_li">
+                                <input type="radio" id="sakura" name="chara" value="sakura" style="display:none;"
+                                       required>
+                                <div class="selection" onclick="selectCharacter('sakura')">
+                                    <figure><img src="../images/vote/sakura.png" alt=""></figure>
+                                    <h3>Sakura</h3>
+                                </div>
+                            </li>
+                            <li class="smail_li">
+                                <input type="radio" id="shinji" name="chara" value="shinji" style="display:none;"
+                                       required>
+                                <div class="selection" onclick="selectCharacter('shinji')">
+                                    <figure><img src="../images/vote/shinji.png" alt=""></figure>
+                                    <h3>Shinji</h3>
+                                </div>
+                            </li>
+                            <li class="smail_li">
+                                <input type="radio" id="takina" name="chara" value="takina" style="display:none;"
+                                       required>
+                                <div class="selection" onclick="selectCharacter('takina')">
+                                    <figure><img src="../images/vote/takina.png" alt=""></figure>
+                                    <h3>Takina</h3>
+                                </div>
+                            </li>
+                        </ul>
+
+
+                    </div>
+
+                </section>
+
+                <!-- /vote-->
+
+
+                <section id="emali">
+                    <h2>email (optional)<br><span>You can fill in your email to get the latest news about <b>L</b>ycoris
+                            <b>R</b>ecoil</span></h2>
+                    <div class="space-wrap">
+
+                        <div class="email-wrap">
+
+                            <div class="form__group field">
+                                <input type="email" class="form__field" placeholder="email" name="email" id='email'/>
+                                <label for="email" class="form__label">Email</label>
+                            </div>
+                        </div>
+
+                </section>
+                <div><button type="button" onclick="Submit()">Submit</button></div>
+
+            </form>
+
+        </div>
+    </div>
+
+
+    <!-- /contents -->
+
+    <!-- footer -->
+
+    <footer>
+
+        <!-- sns -->
+
+        <ul class="sns">
+            <li class="smail_li"><a href="https://twitter.com/lycoris_recoil" target="_blank"><img
+                         src="../images/common/icon_x.png" alt="twitter/X"></a></li>
+            <li class="smail_li"><a href="https://www.pixiv.net/users/83515809" target="_blank"><img
+                         src="../images/common/icon_pixiv.png" alt="pixiv"></a></li>
+        </ul>
+
+        <!-- /sns -->
+
+    </footer>
+
+    <!-- /footer -->
+
+    <!-- return top -->
+
+    <div id="page-top" style=""><a href="#header-wrap"><img src="../images/common/returan-top.png" alt="ページTOPへ戻る"></a>
+    </div>
+
+    <!-- /return top -->
+
+</body>
+
+</html>

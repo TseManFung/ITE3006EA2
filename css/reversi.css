@@ -1,0 +1,44 @@
+.chisato {
+  background: url(../images/game/face_chisato_b.png) no-repeat;
+  background-size: contain;
+}
+
+.chisato.b {
+  background: url(../images/game/face_chisato_a.png) no-repeat;
+}
+
+.takina {
+  background: url(../images/game/face_takina_a.png) no-repeat;
+  background-size: contain;
+}
+
+.takina.b {
+  background: url(../images/game/face_takina_b.png) no-repeat;
+}
+
+.parent-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.board {
+  display: grid;
+  width: 80vh;
+  height: 80vh;
+  grid-template-columns: repeat(8, minmax(35px, 143.75px));
+  grid-template-rows: repeat(8, minmax(35px, 143.75px));
+  gap: 1px;
+}
+
+.cell {
+  width: 10vh;
+  height: 10vh;
+  border: 1px solid #000;
+  background-color: #ffffff;
+}
+
+.cell.empty {
+  cursor: pointer;
+}
